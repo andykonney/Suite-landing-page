@@ -259,7 +259,7 @@ footer{
     .mobile-hero-img{
         display: none;
     }
-    .tablet-hero-img{
+    .tablet-hero-img-container{
         display: block;
         width: 16rem;
     }
@@ -279,7 +279,8 @@ footer{
         font-size: 40px;
     }
     footer{
-        flex-direction: space-between;
+        flex-direction: row;
+        justify-content: space-between;
         padding: 0;
         margin: 0;
         height: 12rem;
@@ -287,10 +288,82 @@ footer{
     .footer-logo{
         width: 85px;
     }
+    .background{
+        width: 900px;
+        position: absolute;
+        height: 730px;
+        top: 1325px;
+        z-index: -1;
+        background-color: var(--light-creame);
+
+    }
 }
 
 @media screen and (min-width: 1024px){
+    .container{
+        min-width: 900px;
+    }
+    .header-btn:hover{
+        background-color: var(--dark-grey);
+        color: var(--accent-color);
+    }
+    .desktop-view{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-header{width: 38rem;
+        top: -12rem;}
+    .curved-line{
+        margin-left: 17rem;
+        width: 275px;
+    }
+    .mission-statement{
+        font-size: 72px;
+    }
+    .tablet-hero-img-container{
+        width: 20rem;
+    }
+    .stats{
+        flex-direction: column;
+        margin: 0.4rem;
+        justify-content: space-evenly;
+    }
+    .white-space{
+        height: 2rem;
+    }
 
+    .desktop-testimonial-2, .testimonial-body, .testimonial-name{
+        text-align: left;
+    }
+    .desktop-testimonial-2{
+        height: 430px;
+        padding: 4rem 4rem 0 2rem;
+    }
+
+    .testimonial-body{
+        padding-left: 0; 
+    }
+    
+    .testimonial-content{
+        flex-direction: row;
+    }
+    .jeremy-img-container{
+        top: -1.25rem;
+        left: 5.5rem;
+        width: 17.5rem;
+    }
+
+    .blurred-bg{
+        width: 26rem;
+        padding: 3rem;
+        padding-left: 3rem;
+    }
+    .background{
+        width: 1248px;
+        height: 450px;
+        position: absolute;
+        top: 1100px;
+    }
 }
 
 /* @media screen and (min-width: 600px){
